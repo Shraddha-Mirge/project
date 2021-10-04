@@ -8,6 +8,58 @@ html, body {
   background: #f6f6f6;
 }
 
+
+.box
+{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+width:600px
+padding:20px;
+box-sizing:border-box;background(-50%,50%);
+background:#fff;
+border-radius:4px;
+box-shadow:0 5 15px rgba(0,0,0,.5);
+display:flex;
+transition: .5s;
+}
+
+.box:hover{
+box-shadow: 0 15px 30px rgba(0,0,0,.5);
+
+.box .imgBx{
+width: 150px
+flex: 0 0 150px;
+}
+
+.box .imgBx
+{
+max-width: 100%;
+}
+.box .content{
+padding-left:20px
+}
+
+.box .content .h2{
+padding-left:0px
+margin: 0;
+color:#ff005c;
+font-size: 22px
+
+}
+
+.box .content .p{
+padding-left:10px 0 0;
+margin: 0;
+text-align:justify;
+}
+}
+
+
+
+
+
 a {
   text-decoration: none;
   color: inherit;
@@ -651,10 +703,7 @@ header nav ul .userinfo i.fa-chevron-down {
     padding: 100px auto;
     border-bottom: 1px solid rgb(34, 33, 33);
   }
-  .footer .footer-section .send-msg-btn {
-    width: 100%;
-    padding: 8px auto;
-  }
+  
 }
 
 @media only screen and (max-width: 560px) {
